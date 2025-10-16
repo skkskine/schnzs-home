@@ -27,7 +27,7 @@ use one of the following commands to explore around:
   skills
   bio
   contacts
-  help
+  commands
 
 `;
 
@@ -54,8 +54,24 @@ export const skills = `${formatTitle("skills")}
 export const contacts = `${formatTitle("contacts")}
 you can reach out by email at gianmaria@tuta.com, or find me on linkedin (Gianmaria Schinezos) and github (skkskine)`;
 
+export const credits = `${formatTitle("credits")}
+made with vite (react ts) and tailwind, deployed with docker in a vps`;
+
+export const commands = `${formatTitle("commands")}
+skills
+bio
+contacts
+help
+commands
+credits`;
+
+export const unknownCommand =
+  "this command doesn't exists, type commands for a comprehensive list";
+
 function formatTitle(title: string): string {
-  return `\n=============
-${title}
-=============\n`;
+  let equals = "=".repeat(title.length);
+
+  return `\n====${equals}====
+=== ${title} ===
+====${equals}====\n`;
 }

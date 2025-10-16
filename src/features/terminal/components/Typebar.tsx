@@ -16,7 +16,7 @@ export default function Typebar({ onCommand }: prop) {
   }
 
   return (
-    <div className="flex items-center mt-3">
+    <div className="flex items-center mt-3 pb-4">
       <span className="pr-2">guest@schnzs.xyz:~{">"}</span>
       <input
         id="input-bar"
