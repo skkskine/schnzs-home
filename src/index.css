@@ -133,3 +133,7 @@ pre,
 input {
   color: #4af626;
 }
+
+html {
+  background-color: black;
+}

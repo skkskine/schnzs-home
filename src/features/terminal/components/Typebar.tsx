@@ -1,7 +1,8 @@
 import { useRef } from "react";
+import type { Command } from "../../../types/command";
 
 interface prop {
-  onCommand: (command: string) => void;
+  onCommand: (command: Command) => void;
 }
 
 export default function Typebar({ onCommand }: prop) {
@@ -9,13 +10,13 @@ export default function Typebar({ onCommand }: prop) {
 
   function handleKeyDown(event: React.KeyboardEvent<HTMLInputElement>) {
     if (event.key === "Enter" && inputRef.current?.value) {
-      onCommand(inputRef.current.value);
+      onCommand(inputRef.current.value as Command);
       inputRef.current.value = "";
     }
   }
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mt-3">
       <span className="pr-2">guest@schnzs.xyz:~{">"}</span>
       <input
         id="input-bar"

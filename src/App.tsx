@@ -10,7 +10,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-black min-h-screen">
+    <div className="min-h-screen">
       <Terminal></Terminal>
     </div>
   );

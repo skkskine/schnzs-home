@@ -1,21 +1,17 @@
-export default function HandleCommands(command: string): string {
+import type { Command } from "../types/command";
+import { bio, contacts, skills } from "./texts";
+
+export default function HandleCommands(command: Command): string {
   switch (command) {
     case "bio":
-      return getBio();
+      return bio;
+    case "skills":
+      return skills;
     case "contacts":
-      return getContacts();
+      return contacts;
     case "clear":
       return "clear";
     default:
       return "this command doesn't exists. type commands for a comprehensive list";
   }
-}
-
-function getBio(): string {
-  return `Questa è la mia bio.
-    Bella vero?`;
-}
-
-function getContacts(): string {
-  return `-> you can reach out via email at gianmaria@tuta.com, or find me on linkedin (Gianmaria Schinezos) or github (skkskine) <-`;
 }
