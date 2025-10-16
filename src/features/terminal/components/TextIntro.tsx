@@ -1,4 +1,4 @@
-import { intro, title } from "../../../utils/texts";
+import { intro, title } from "../utils/texts";
 
 export default function TextIntro() {
   return (

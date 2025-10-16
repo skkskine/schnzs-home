@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import TextIntro from "./TextIntro";
 import Typebar from "./Typebar";
-import HandleCommands from "../../../utils/commands";
-import type { Command } from "../../../types/command";
+import HandleCommands from "../utils/commands";
+import type { Command } from "../types/command";
 
 interface TextInput {
   id: string;

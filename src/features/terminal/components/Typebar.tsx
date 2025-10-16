@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import type { Command } from "../../../types/command";
+import type { Command } from "../types/command";
 
 interface prop {
   onCommand: (command: Command) => void;
