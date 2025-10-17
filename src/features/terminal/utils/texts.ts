@@ -33,19 +33,18 @@ use one of the following commands to explore around:
 `;
 
 export const bio = `${formatTitle("bio")}
-# my it journey
+# where i started
 
 started my it learnings during high school, studying computer science. after graduation, i completed a web development course and started working in the field.
 
-## first role: web developer at heavy studio
+# web developer at heavy studio
 joined heavy studio, a web agency specializing in fashion and food industries. focused on:
 - developing e-commerce platforms
 - managing hosting, domains, emails, and providing technical support
 
-## next step: senior developer at siav
+# frontend developer at siav
 moved to siav, a leader in enterprise content management solutions. worked on two major redesign projects for the company’s flagship products.
-
-### key learning:
+key learning:
 - architectural design and implementation of enterprise applications
 - designed and implemented client side performance-intensive solutions
 - code splitting and bundle optimizations
