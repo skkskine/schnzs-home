@@ -50,7 +50,7 @@ moved to siav, a leader in enterprise content management solutions. worked on tw
 - designed and implemented client side performance-intensive solutions
 - code splitting and bundle optimizations
 
-type 'skills' to learn more on what i can do
+type 'skills' to learn more about my expertise
 `;
 
 export const skills = `${formatTitle("skills")}
