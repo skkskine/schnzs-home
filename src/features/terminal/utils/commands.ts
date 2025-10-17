@@ -22,6 +22,8 @@ export default function HandleCommands(command: Command): string {
       return commands;
     case "clear":
       return "clear";
+    case "cv":
+      return "cv";
     default:
       return unknownCommand;
   }

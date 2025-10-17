@@ -26,6 +26,7 @@ export const intro = `welcome :) i'm a frontend developer & code enthusiast
 use one of the following commands to explore around:
   bio
   skills
+  cv
   contacts
   commands
 

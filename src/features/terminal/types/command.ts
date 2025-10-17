@@ -4,5 +4,6 @@ type AcceptedCommands =
   | "contacts"
   | "clear"
   | "credits"
-  | "commands";
+  | "commands"
+  | "cv";
 export type Command = AcceptedCommands & string;

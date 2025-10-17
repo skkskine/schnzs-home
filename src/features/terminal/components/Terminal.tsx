@@ -15,6 +15,14 @@ export default function Terminal() {
   function handleCommand(command: Command) {
     const text = HandleCommands(command);
 
+    if (text === "cv") {
+      window.open(
+        "https://drive.google.com/file/d/1a5Cg2vjeia8W61FSrXJnV93AdEOekC8_/view?usp=sharing",
+        "_blank"
+      );
+      return;
+    }
+
     setOutputList(
       text === "clear" ? [] : [...outputList, { id: crypto.randomUUID(), text }]
     );
