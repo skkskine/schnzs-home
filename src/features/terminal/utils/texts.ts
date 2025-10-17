@@ -24,19 +24,33 @@ export const title = `
 export const intro = `welcome :) i'm a frontend developer & code enthusiast
 
 use one of the following commands to explore around:
-  skills
   bio
+  skills
   contacts
   commands
 
 `;
 
 export const bio = `${formatTitle("bio")}
-i've started my IT journey in high school studying computer science, once i completed my studies i took a web development course and i started working right afterwards.
-the first job experience was at heavy studio, a web agency focusing on the fashion and food, developing e-commerces and managing hosting, domain, emails, and techncal support.\n
-after 3 years i felt that it was time to move on and i joined siav, a company developing exterprise content management solutions, in which i worked on two project, being both complete redesigns of the company main products.
-here i learned about architecture, core feature development, team leaing, performance optimizations, working on international teams.
-i was responsible of the startup of a complex enterprise application, curating all the core aspects, including the development of custom (yet simple) solutions to solve complex problems.`;
+# my it journey
+
+started my it learnings during high school, studying computer science. after graduation, i completed a web development course and started working in the field.
+
+## first role: web developer at heavy studio
+joined heavy studio, a web agency specializing in fashion and food industries. focused on:
+- developing e-commerce platforms
+- managing hosting, domains, emails, and providing technical support
+
+## next step: senior developer at siav
+moved to siav, a leader in enterprise content management solutions. worked on two major redesign projects for the company’s flagship products.
+
+### key learning:
+- architectural design and implementation of enterprise applications
+- designed and implemented client side performance-intensive solutions
+- code splitting and bundle optimizations
+
+type 'skills' to learn more on what i can do
+`;
 
 export const skills = `${formatTitle("skills")}
 -architectural and technical lead
