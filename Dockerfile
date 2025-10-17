@@ -4,9 +4,9 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN NODE_ENV=development npm i install
+RUN npm i install
 
-RUN NODE_ENV=development npm i -g serve
+RUN npm i -g serve
 
 COPY . .
 
