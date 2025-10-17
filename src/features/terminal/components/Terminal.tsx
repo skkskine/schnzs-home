@@ -38,7 +38,10 @@ export default function Terminal() {
       <TextIntro></TextIntro>
       <pre>
         {outputList.map((output) => (
-          <p key={output.id} className="mb-2 max-w-1/2 whitespace-pre-wrap">
+          <p
+            key={output.id}
+            className="mb-2 md:max-w-1/2 max-w-screen whitespace-pre-wrap"
+          >
             {output.text}
           </p>
         ))}
