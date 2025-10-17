@@ -6,7 +6,7 @@ COPY package.json .
 
 RUN npm install
 
-RUN npm i -g serve
+RUN NODE_ENV=development npm i -g serve
 
 COPY . .
 
