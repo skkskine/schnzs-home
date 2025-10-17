@@ -11,8 +11,11 @@ interface TextInput {
 
 export default function Terminal() {
   const [outputList, setOutputList] = useState<TextInput[]>([]);
+  const [commandBuffer, setCommandBuffer] = useState<string[]>([""]);
+  const [commandBufferIndex, setCommandBufferIndex] = useState<number>(0);
 
   function handleCommand(command: Command) {
+    setCommandBuffer([commandBuffer[0], command, ...commandBuffer.slice(1)]);
     const text = HandleCommands(command);
 
     if (text === "cv") {
@@ -26,6 +29,22 @@ export default function Terminal() {
     setOutputList(
       text === "clear" ? [] : [...outputList, { id: crypto.randomUUID(), text }]
     );
+
+    setCommandBufferIndex(0);
+  }
+
+  function handleArrow(arrow: "ArrowUp" | "ArrowDown") {
+    const shouldAdd =
+      arrow === "ArrowUp" && commandBufferIndex < commandBuffer.length - 1;
+    const shouldSubtract = arrow === "ArrowDown" && commandBufferIndex > 0;
+
+    if (shouldAdd) {
+      setCommandBufferIndex(commandBufferIndex + 1);
+    }
+
+    if (shouldSubtract) {
+      setCommandBufferIndex(commandBufferIndex - 1);
+    }
   }
 
   // always keep the page to the bottom
@@ -46,7 +65,11 @@ export default function Terminal() {
           </p>
         ))}
       </pre>
-      <Typebar onCommand={handleCommand}></Typebar>
+      <Typebar
+        onArrow={handleArrow}
+        bufferCommand={commandBuffer[commandBufferIndex]}
+        onCommand={handleCommand}
+      ></Typebar>
     </div>
   );
 }

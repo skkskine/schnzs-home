@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Terminal from "./features/terminal/components/Terminal";
 
 function App() {
+  // always keep the focus on the input bar
   useEffect(() => {
     const el = document.querySelector<HTMLInputElement>("#input-bar");
     window.addEventListener("click", () => {
@@ -9,11 +10,7 @@ function App() {
     });
   }, []);
 
-  return (
-    <div className="min-h-screen">
-      <Terminal></Terminal>
-    </div>
-  );
+  return <Terminal></Terminal>;
 }
 
 export default App;
