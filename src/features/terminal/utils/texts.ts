@@ -33,7 +33,7 @@ use one of the following commands to explore around:
 `;
 
 export const bio = `${formatTitle("bio")}
-# where i started
+# where everything started
 
 i started my it learnings during high school, studying computer science. after graduation, i completed a web development course and started working in the field.
 
