@@ -35,7 +35,7 @@ use one of the following commands to explore around:
 export const bio = `${formatTitle("bio")}
 # where i started
 
-started my it learnings during high school, studying computer science. after graduation, i completed a web development course and started working in the field.
+i started my it learnings during high school, studying computer science. after graduation, i completed a web development course and started working in the field.
 
 # web developer at heavy studio
 joined heavy studio, a web agency specializing in fashion and food industries. focused on:
